@@ -8,7 +8,7 @@ router.get('/', function (req, res, next) {
         if (err) {
             posts = [];
         }
-        res.render('container', {title: '首页', posts1: posts});
+        res.render('container', {title: '首页', posts: posts});
     })
 });
 
