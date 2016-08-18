@@ -61,7 +61,7 @@ app.use(function(req,res,next){
 });*/
 
 app.use('/', root);
-app.use('/u/:user', users);
+app.use('/u', users);
 app.use('/post', post);
 app.use('/reg', register);
 app.use('/login', login);

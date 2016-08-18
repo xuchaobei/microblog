@@ -1,5 +1,5 @@
 module.exports = {
-    coolieSecret : 'microblogjason',
+	coolieSecret : 'microblogjason',
 	db:'microblog',
 	host:'localhost'
 };

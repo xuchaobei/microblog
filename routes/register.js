@@ -3,7 +3,7 @@ var router = express.Router();
 var User = require('../models/user.js');
 
 router.get('/',checkNotLogin);
-router.get('',function(req,res){
+router.get('/',function(req,res){
     res.render('reg',{
         title:"用户注册"
     });

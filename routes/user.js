@@ -3,7 +3,7 @@ var router = express.Router();
 var User = require('../models/user');
 var Post = require('../models/post');
 
-router.get('/', function (req, res) {
+router.get('/:user', function (req, res) {
     User.get(req.params.user, function (err, user) {
         if (!user) {
             req.flash('error', '用户不存在');

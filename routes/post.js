@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var Post = require('../models/post');
 
-router.post('/post', checkLogin);
+router.post('/', checkLogin);
 router.post('/', function (req, res, next) {
     var currentUser = req.session.user;
     var post = new Post(currentUser.name, req.body.post);
